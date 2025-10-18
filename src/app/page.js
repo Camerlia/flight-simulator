@@ -135,7 +135,7 @@ Thank you`;
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-6xl font-bold mb-6 leading-tight">
-                Flight Simulators<br />For Everyone
+                Experience flight<br />Anywhere.
               </h1>
               <button 
                 onClick={() => scrollToSection('booking')}
@@ -144,7 +144,7 @@ Thank you`;
                 Start Playing
               </button>
               <p className="text-gray-400 text-lg">
-                Elevate your flying experience with state-of-the-art simulators
+                Find and book simulator experiences near you <br/> or host your own and bring aviation closer to your city.
               </p>
             </div>
             <div className="relative">
@@ -164,45 +164,54 @@ Thank you`;
       
       <section id="about" className="min-h-screen bg-slate-900/50 py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-5xl font-bold mb-12 text-center">What We Do</h2>
+          <h2 className="text-5xl font-bold  text-center">
+          How It Works
+          </h2>
+          <p className={'mt-4 mb-12 text-xl text-center'}>Your ticket to flight — in three steps.</p>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-cyan-500 transition-all">
               <div className="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center mb-6">
                 <Plane className="w-8 h-8 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Premium Simulators</h3>
+              <h3 className="text-2xl font-bold mb-4">Find a simulator near you.</h3>
               <p className="text-gray-400 leading-relaxed">
-                Experience flight like never before with our state-of-the-art flight simulator rigs. From casual flying to professional training, we&apos;ve got you covered.
+                Explore our network of certified setups in your city.
               </p>
             </div>
             <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500 transition-all">
               <div className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8 text-orange-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Easy Booking</h3>
+              <h3 className="text-2xl font-bold mb-4">Book your session.</h3>
               <p className="text-gray-400 leading-relaxed">
-                Book your simulator session in minutes. Choose your preferred date, time, and duration. We make it simple to take to the skies.
+                Choose your time, pay securely, and lock in your seat.
               </p>
             </div>
             <div className="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-purple-500 transition-all">
               <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mb-6">
                 <MapPin className="w-8 h-8 text-purple-400" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Host Network</h3>
+              <h3 className="text-2xl font-bold mb-4">Fly and feel it.</h3>
               <p className="text-gray-400 leading-relaxed">
-                Join our network of simulator hosts. Share your passion for flight simulation and earn while helping others experience the thrill of flying.
+             Step in, take control, and experience flight like never before.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+
+      
+
       
       <section id="booking" className="min-h-screen bg-black py-20">
         <div className="max-w-4xl mx-auto px-6">
+        <p className={'text-center text-base mb-4'}>Ready to fly?
+</p>
           <h2 className="text-5xl font-bold mb-6 text-center">Book Your Session</h2>
           <p className="text-gray-400 text-center mb-12 text-lg">
-            Ready to take flight? Book your simulator session now and experience the thrill of flying.
+            Book your session now or apply to host a simulator in your city.
+Follow us on Instagram @fvrgoaviation and TikTok @fvrgo for live updates.
           </p>
           <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
             <form onSubmit={handleBookingSubmit} className="space-y-6">
@@ -295,19 +304,59 @@ Thank you`;
                 type="submit"
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
               >
-                Book via Email
+                Book Now
               </button>
             </form>
+          </div>
+        </div>
+      </section>{/* Vision Section */}
+      <section id="vision" className="min-h-screen bg-gradient-to-b from-black to-slate-900 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold mb-6">Building the future of African aviation together.</h2>
+            <p className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed">
+              We believe the next generation of pilots, engineers, and aviation leaders will rise from communities that had the chance to touch flight early.
+              Every simulator we launch brings that dream closer.
+            </p>
+          </div>
+
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-cyan-900/30 to-orange-900/30 p-12 rounded-3xl border border-cyan-500/30 hover:border-cyan-500/60 transition-all">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-orange-500 rounded-full flex items-center justify-center mb-8">
+                  <Plane className="w-10 h-10 text-white" />
+                </div>
+                <h3 className="text-4xl font-bold mb-6">Every flight funds a future.</h3>
+                <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
+                  Through the fvrgo foundation, part of every booking supports programs helping out-of-school children learn, build, and dream again.
+                  When you fly with us, you&apos;re helping someone else take off too.
+                </p>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-gradient-to-r from-cyan-500 to-orange-500 hover:from-cyan-600 hover:to-orange-600 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       
+
+
+
+      
       <section id="hosting" className="min-h-screen bg-slate-900/50 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl font-bold mb-6 text-center">Become a Host</h2>
+          
           <p className="text-gray-400 text-center mb-12 text-lg">
-            Have a simulator rig? Join our network and start hosting sessions in your area.
+            Join the fvrgo network and earn from your simulator.
+We’ll help you set up, list, and manage bookings while you focus on what you love — flying.
+
           </p>
           <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800">
             <form onSubmit={handleHostSubmit} className="space-y-6">
@@ -395,7 +444,8 @@ Thank you`;
                 type="submit"
                 className="w-full bg-orange-500 hover:bg-orange-600 text-white py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105"
               >
-                Book via Email
+                List Your Simulator
+
               </button>
             </form>
           </div>
